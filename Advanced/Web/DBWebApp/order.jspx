@@ -1,0 +1,64 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:db="http://dac.met.edu/sales">
+
+	<jsp:useBean id="login"
+		class="edu.met.dac.sales.CustomerBean" scope="session"/>
+
+	<head>
+		<title>Order - DBWebApp</title>
+	</head>
+
+	<body>
+		<h1>Welcome Customer ${login.customerId}</h1>
+		<form action="order" method="post">
+		  <table border="0" cellpadding="4" cellspacing="0">
+			<tr>
+				<td><b>Product No:</b></td>
+				<td>
+					<select name="productNo">
+						<db:getProduct var="pi">
+							<option>${pi.productNo}</option>
+						</db:getProduct>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><b>Quantity:</b></td>
+				<td><input type="text" name="quantity"/></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="submit" value="Order"/></td>
+			</tr>
+		  </table>
+		</form>		 
+		<p>
+			<c:if test="${param.submit == 'Order'}">
+				<script type="text/javascript">
+				<![CDATA[
+					alert("New order number is ${requestScope.orderNo}");
+				]]>
+				</script>
+			</c:if>
+		</p>
+		<p>
+			<a href="logout">Log Out</a>
+		</p>
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

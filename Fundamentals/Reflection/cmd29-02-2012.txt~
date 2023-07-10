@@ -1,0 +1,110 @@
+    1  exit
+    2  cd /SoftDev/Java/Fundamentals/Reflection/
+    3  ll
+    4  javap -c ObjectAccessTest
+    5  javap ObjectAccessTest
+    6  vi ObjectAccessTest.java 
+    7  javac ObjectAccessTest.java 
+    8  javap ObjectAccessTest
+    9  vi ClassLoaderTest.java 
+   10  vi ClassLoaderTest.java 
+   11  javac ClassLoaderTest.java 
+   12  vi ClassLoaderTest.java 
+   13  vi ClassLoaderTest.java 
+   14  javac ClassLoaderTest.java 
+   15  vi ClassLoaderTest.java 
+   16  javac ClassLoaderTest.java 
+   17  vi ClassLoaderTest.java 
+   18  javac ClassLoaderTest.java 
+   19  vi ClassLoaderTest.java 
+   20  javac ClassLoaderTest.java 
+   21  vi ClassLoaderTest.java 
+   22  javac ClassLoaderTest.java 
+   23  vi ClassLoaderTest.java 
+   24  javac ClassLoaderTest.java 
+   25  java ClassLoaderTest
+   26  vi ClassLoaderTest.java 
+   27  javac ClassLoaderTest.java 
+   28  java ClassLoaderTest
+   29  java ClassLoaderTest
+   30  java -Djava.security.manager ClassLoaderTest
+   31  cp ClassLoaderTest.java SandboxTest.java
+   32  vi SandboxTest.java 
+   33  javac SandboxTest.java 
+   34  java SandboxTest
+   35  vi sandbox.policy
+   36  policytool
+   37  policytool sandbox.policy
+   38  vi sandbox.policy
+   39  vi SandboxTest.java 
+   40  javac SandboxTest.java 
+   41  java SandboxTest
+   42  javac commands/Greet.java 
+   43  java SandboxTest
+   44  rm commands/Greet.class
+   45  vi SandboxTest.java 
+   46  history > cmd29-02-2012_1.txt
+    1  exit
+    2  cd /SoftDev/Java/Fundamentals/Reflection/
+    3  ll
+    4  javap -c ObjectAccessTest
+    5  javap ObjectAccessTest
+    6  vi ObjectAccessTest.java 
+    7  javac ObjectAccessTest.java 
+    8  javap ObjectAccessTest
+    9  vi ClassLoaderTest.java 
+   10  vi ClassLoaderTest.java 
+   11  javac ClassLoaderTest.java 
+   12  vi ClassLoaderTest.java 
+   13  vi ClassLoaderTest.java 
+   14  javac ClassLoaderTest.java 
+   15  vi ClassLoaderTest.java 
+   16  javac ClassLoaderTest.java 
+   17  vi ClassLoaderTest.java 
+   18  javac ClassLoaderTest.java 
+   19  vi ClassLoaderTest.java 
+   20  javac ClassLoaderTest.java 
+   21  vi ClassLoaderTest.java 
+   22  javac ClassLoaderTest.java 
+   23  vi ClassLoaderTest.java 
+   24  javac ClassLoaderTest.java 
+   25  java ClassLoaderTest
+   26  vi ClassLoaderTest.java 
+   27  javac ClassLoaderTest.java 
+   28  java ClassLoaderTest
+   29  java ClassLoaderTest
+   30  java -Djava.security.manager ClassLoaderTest
+   31  cp ClassLoaderTest.java SandboxTest.java
+   32  vi SandboxTest.java 
+   33  javac SandboxTest.java 
+   34  java SandboxTest
+   35  vi sandbox.policy
+   36  policytool
+   37  policytool sandbox.policy
+   38  vi sandbox.policy
+   39  vi SandboxTest.java 
+   40  javac SandboxTest.java 
+   41  java SandboxTest
+   42  javac commands/Greet.java 
+   43  java SandboxTest
+   44  rm commands/Greet.class
+   45  vi SandboxTest.java 
+   46  history > cmd29-02-2012_1.txt
+   47  vi Greeter.java
+   48  javac Greeter.java 
+   49  vi ProxyTest.java
+   50  javac ProxyTest.java 
+   51  java ProxyTest
+   52  vi ProxyTest.java
+   53  javac ProxyTest.java 
+   54  java ProxyTest
+   55  vi ProxyTest.java
+   56  vi ProxyTest.java
+   57  cp ProxyTest.java DynamicProxyTest.java
+   58  vi DynamicProxyTest.java 
+   59  javap java.lang.reflect.Proxy
+   60  vi DynamicProxyTest.java 
+   61  javac DynamicProxyTest.java 
+   62  java DynamicProxyTest
+   63  vi DynamicProxyTest.java 
+   64  history >> cmd29-02-2012_1.txt 

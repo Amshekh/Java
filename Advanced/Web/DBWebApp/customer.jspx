@@ -1,0 +1,44 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:jsp="http://java.sun.com/JSP/Page">
+
+	<head>
+		<title>Login - DBWebApp</title>
+	</head>
+
+	<body>
+		<h1>Customer Login</h1>
+		<form action="login" method="post">
+	      <table border="0" cellpadding="4" cellspacing="0">
+			<tr>
+				<td><b>Customer ID:</b></td>
+				<td><input type="text" name="customerId"/></td>
+			</tr>
+			<tr>
+				<td><b>Password:</b></td>
+				<td><input type="password" name="password"/></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Login"/></td>
+			</tr>
+	 	  </table>
+		</form>
+		<p>
+			<b>Authorization ${requestScope.failed ? 'Failed' : 'Required'}</b>
+		</p>
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

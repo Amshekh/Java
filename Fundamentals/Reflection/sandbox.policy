@@ -1,0 +1,7 @@
+/* AUTOMATICALLY GENERATED ON Wed Feb 29 11:12:19 IST 2012*/
+/* DO NOT EDIT */
+
+grant codeBase "file:./" {
+  permission java.security.AllPermission;
+};
+

@@ -1,0 +1,44 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:db="http://dac.met.edu/sales">
+
+	<head>
+		<title>Home - DBWebApp</title>
+	</head>
+
+	<body>
+		<h1>Our Products</h1>
+		<table border="1" cellpadding="4" cellspacing="0">
+			<tr>
+				<th>Product No</th>
+				<th>Unit Price</th>
+				<th>Current Stock</th>
+			</tr>
+			<db:getProduct var="pi">
+				<tr>
+					<td>${pi.productNo}</td>
+					<td align="right">${pi.price}</td>
+					<td align="right">${pi.stock}</td>
+				</tr>
+			</db:getProduct>
+		</table>
+		<p>
+			<a href="login">Customer Log In</a>
+		</p>
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
